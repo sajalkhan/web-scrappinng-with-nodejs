@@ -1,0 +1,25 @@
+{
+  "starTechUrl": "https://www.startech.com.bd/",
+  "ryansUrl": "https://www.ryanscomputers.com/",
+  "starTech": {
+    "laptop": {
+      "api": "laptop-notebook/laptop",
+      "page": 34,
+      "targetItem": ".p-item",
+      "itemName": ".p-item-name",
+      "itemPrice": ".p-item-price"
+    },
+    "LaptopAccessories": {
+      "api": "laptop-notebook/laptop-accessories"
+    }
+  },
+  "ryans": {
+    "laptop": {
+      "api": "category/laptop-all-laptop",
+      "page": 17,
+      "targetItem": ".category-single-product",
+      "itemName": ".grid-view-text",
+      "itemPrice": ".cat-sp-text"
+    }
+  }
+}
