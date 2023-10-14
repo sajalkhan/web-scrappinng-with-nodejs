@@ -20,11 +20,10 @@ const getData = async (url, config) => {
 
 const getWebProductInfo = async () => {
   try {
-    // Use Promise.all to make multiple concurrent requests
-    const [starTechProducts, ryansProducts] = await Promise.all([getData(starTechUrl, starTech.laptop), getData(ryansUrl, ryans.laptop)]);
+    const ryansProducts = await getData(ryansUrl, ryans.laptop);
+    const starTechProducts = await getData(starTechUrl, starTech.laptop);
 
     const comparedProducts = findMatchingProducts(starTechProducts, ryansProducts);
-
     saveDataToCSV(starTechProducts, comparedProducts);
   } catch (error) {
     console.error(error);
